@@ -4,7 +4,7 @@ pipeline {
 	stages {
         stage('Build the source code using maven') {
             steps {
-                mvn clean package
+                mvn clean install
             }
         }
 	}
