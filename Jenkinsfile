@@ -4,7 +4,7 @@ pipeline {
 		maven '3.9.6'
 	}
     environment {
-      PATH =   "C:\Program Files\Maven\apache-maven-3.9.6\bin\L$PATH"
+      PATH =   "C:\Program Files\Maven\apache-maven-3.9.6\bin:$PATH"
     }
     stages {
         stage('Build the source code using maven') {
